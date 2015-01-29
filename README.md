@@ -89,12 +89,5 @@ Log.add Log4r::Logstash::RedisOutputter.new("redis", additional_fields: {
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
 
-You can spin up a local redis instance in a VM by using the included Vagrantfile
+You can spin up a local redis instance in virtualbox by using the included Vagrantfile
 and typing `vagrant up`. Monitor incoming messages using `vagrant ssh -c "redis-cli monitor"`
-
-## TODO
-1. Update the vagrant redis config so that it is listening on 0.0.0.0, rather than just
-127.0.0.1, which prevents forwarded ports
-2. Push to github (waiting on open source approval)
-3. Configure Travis builds (waiting on ^)
-4. Configure code climate inspection (waiting on ^)
