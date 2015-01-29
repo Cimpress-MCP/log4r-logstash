@@ -91,3 +91,5 @@ Log.add Log4r::Logstash::RedisOutputter.new("redis", additional_fields: {
 
 You can spin up a local redis instance in virtualbox  using the included Vagrantfile
 by typing `vagrant up`. Monitor incoming messages using `vagrant ssh -c "redis-cli monitor"`.
+
+Run a simple example with `ruby examples/redis.rb`
