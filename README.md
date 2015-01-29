@@ -14,7 +14,7 @@ gem 'log4r-logstash'
 
 And then execute:
 
-    $ bundled
+    $ bundle
 
 Or install it yourself as:
 
