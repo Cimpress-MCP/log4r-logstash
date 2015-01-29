@@ -1,12 +1,12 @@
 language: ruby
 rvm:
-  - 1.9.3
-  - 2.0.0
+- 1.9.3
+- 2.0.0
 deploy:
   provider: rubygems
-#  api_key:
-#    secure: ""
   gem: log4r-logstash
+  api_key:
+    secure: X5VNoys5YafYfpx2nuC8kjKqOSwFAKCFWizEsuaD77WtXXpgwYbhvuGxdkBqaRrV2fw+24V+ZnwibiuCbPdfd6rwgLEsOWnQk3uf5JG+a2cegoklM5fX5jneZxE5uNEa8Il45GCTApWpknvejIKYyzzG8uknnautTAEIK/gh7Rw=
   on:
     tags: true
     all_branches: true
