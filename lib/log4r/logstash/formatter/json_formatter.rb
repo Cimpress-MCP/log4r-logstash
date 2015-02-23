@@ -12,7 +12,7 @@ module Log4r
         data["index"] = "#{index}"
         data["timestamp"] = Time.now.getutc.iso8601
         data[level_field_name] = LNAMES[logevent.level]
-        data[data_field_name] = logevent.data
+        data[data_field_name] = logevent.data.force_encoding("UTF-8")
         data.merge! eval_map_proc_values(additional_fields)
         data.to_json
       end

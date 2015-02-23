@@ -8,7 +8,7 @@ $script = <<SCRIPT
 apt-get update
 apt-get install -y redis-server
 sed -i '/bind 127.0.0.1/c\\#bind 127.0.0.1' /etc/redis/redis.conf
-redis-server &
+service redis-server restart
 SCRIPT
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
